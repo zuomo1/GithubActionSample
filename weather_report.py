@@ -74,7 +74,7 @@ def get_all_openid(access_token):
     r = requests.get(url)
     all_dict = json.loads(r.text)
     # 获取 openid 列表
-    openid_list = data_dict['data']['openid']
+    openid_list = all_dict['data']['openid']
     print(openid_list)
     return openid_list
 
