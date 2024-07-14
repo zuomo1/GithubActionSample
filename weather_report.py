@@ -76,6 +76,7 @@ def get_all_openid(access_token):
     # 获取 openid 列表
     openid_list = data_dict['data']['openid']
     print(openid_list)
+    return openid_list
 
 
 def get_daily_love():
